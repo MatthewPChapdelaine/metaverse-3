@@ -1,0 +1,16 @@
+username="`whoami`"
+name="@$username"
+if [ ! -f "$name" ]
+    then touch "$name"
+fi
+
+function cd {
+    mv $name "$@" && builtin cd "$@"
+}
+
+function ls {
+    if [ -f ".description" ] 
+        then cat .description
+    fi
+    /usr/bin/env ls "$@"
+}
