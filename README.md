@@ -5,7 +5,7 @@ Usage
 -----
 ```source .metaverse_bashrc && cd test_area && ls```
 
-Avatars are shown as "@<username>"
+Avatars are shown as "@username"
 
 To create or modify a room's description, edit the .description file.
 
